@@ -2,7 +2,7 @@
 @media screen and (min-width: 1200px){
     .container {
        
-    min-width: 1158px; 
+    
    
     max-width: 1158px;
     
@@ -137,7 +137,7 @@ width: 1158px;
     width:494px;
 }
 .hero-section{
-    
+    width: 1440px;
     background-image: linear-gradient(
         rgba(46 , 47 , 66 , 0.7),
         rgba(46, 47 , 66, 0.7) ) ,url(../images/people-office\ 1.jpg);
@@ -205,10 +205,13 @@ width: 1158px;
 }
 /*------------clients----------*/
 .clients-item{
-    width:168px;
-   gap:24px;
-   flex-wrap: nowrap;
+    width:calc((100% - 120px) / 6);
+   
 
+}
+.clients-list{
+    gap:24px;
+    flex-wrap: nowrap;
 }
 .clients-title{
     margin-bottom: 70px;
@@ -232,7 +235,7 @@ width: 1158px;
 }
 .footer-soc-list{
   margin-left: 120px;
-  margin-bottom: 0;
+  
 }
 .footer-form{
     margin-left:auto;
@@ -244,18 +247,26 @@ width: 1158px;
 .footer-input-title{
     text-align: start;
 }
-.footer-text{
-    margin-bottom: 0px;
-}
+
 .footer-logo{
   display: flex;
-  justify-content: start;}
+  justify-content: start;
 
 
 
 
 
 }
+.footer-text-container{
+    margin-bottom: 0;
+}
+.footer-soc{
+    margin-bottom: 0;
+}
+
 .modalwindow{
     top:50%;
+    width: 408px;
+}
+
 }

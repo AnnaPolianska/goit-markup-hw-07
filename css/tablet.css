@@ -1,9 +1,11 @@
 
 @media screen and (min-width: 768px) and (max-width:1200px){
     .container {
-            min-width: 736px;
-            max-width: 736px;
-            width: 736px;  
+            
+            /*max-width: 736px;
+            width: 736px; */
+            padding-left: 16px; 
+            padding-right: 16px;
         }
     /*-----header-----*/
     .header-links .header-link {
@@ -175,11 +177,19 @@
         row-gap: 64px;
         width: 100%;
     }
-    .clients-list{
-        gap:24px
-    }
+    
     .clients-item{
-        width:168px
+        width:calc((100% - 48px) / 3);
+    }
+    
+    .clients-list{
+        gap: 72px 24px;
+       
+    }
+    .clients-section{
+        padding-left: 76px;
+        padding-right: 76px;
+
     }
     /*------------------footer---------------*/
     .footer-soc{
@@ -188,6 +198,9 @@
     .footer-text{
         width:264px;
         
+    }
+    .footer-text-container{
+        margin-bottom: 72px;
     }
    .footer-container{
     flex-wrap: wrap;
@@ -211,11 +224,16 @@
    .footer-input{
     width: 264px;
     margin-right: 24px;
+    margin-bottom: 0;
    }
    .footer-wrap{
     display: flex;
    }
-
+   
+   .modalwindow{
+    top:50%;
+    width: 408px;
+}
 
     
 

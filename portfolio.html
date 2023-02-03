@@ -5,6 +5,9 @@
     <title>Web Studio</title>
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css"/>
+    <link rel="stylesheet" href="./css/tablet.css"/>
+    <link rel="stylesheet" href="./css/desktop.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,24 +19,83 @@
     <header class="shadow-header">
       <div class="container container-nav">
       <nav class="navigation">
-        <a href="./index.html" class="logo">
+        <a href="./index.html" class="logo"> 
           <span class="web">web</span>studio</a>
         <ul class="header-links">
-          <li class="item"><a href="./index.html" class="header-link">Studio</a></li>
+          <li class="item"><a href="./index.html" class="header-link ">Studio</a></li>
           <li class="item"><a href="./portfolio.html" class="header-link current">Portfolio</a></li>
           <li class="item"><a href="" class="header-link">Contacts</a></li>
         </ul>
       </nav>
       <ul class="header-contacts-list">
-        <li  class="item">
-          <a class="contact-telephone" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="item">
-          <a class="contact-mail" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul></div>
+      <li class="item"><a class="contact-mail item" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+      <li class="item"><a class="contact-telephone item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      </ul>
+      <button type="button" class="hamburger-buton" data-menu-open>
+        <svg width="32" height="32" class="hamburger">
+          <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger-1"></use>
+        </svg>
+        
+      </button>
+    </div>
+    <!------------------mobile-menu-------------------------->
+    <div class="mobile-menu is-hidden" data-menu>
+      <div class="mob-container">
+     <div class="mob-menu-top">
+      <button class="menu-close">
+        <svg class="modal-icon  " width="8px" height="8px" data-menu-close> 
+          <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link current">Studio</a></li>
+          <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link">Portfolio</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link">Contacts</a></li>
+        </ul>
+     </div>
+    <div class="mob-menu-bottom">
+        <ul class="mobile-contacts-list">
+          <li class="mob-contacts-item"><a class="mob-contacts-number" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="mob-contacts-item"><a class="mob-contacts-mail" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+          
+        </ul>
+        <ul class="mobile-soc-list">
+          <li class="mobile-soc-item">
+            <a class="mobile-soc-link link" href="/">
+              <svg class="mobile-soc-icon" width="24" height="24" >
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li >
+          <li class="mobile-soc-item">
+            <a class="mobile-soc-link link"  href="/">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-soc-item">
+            <a class="mobile-soc-link link" href="/">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-facebook">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-soc-item">
+            <a class="mobile-soc-link link" href="/">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+       </div>
+      </div>
+    </div>
+
+    
+    
     </header>
     <main>
       <section class="section portfolio-section">
@@ -163,7 +225,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-text-container">
           <a class="logo footer-logo" href="./index.html" > <span class="web">web</span><span class="footer-studio">studio</span></a>
         <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
@@ -189,7 +251,7 @@
         </li>
         <li class="footer-soc-item">
           <a class="footer-soc-link" href="/">
-            <svg class="footer-soc-icon" width="24" heigth="24">
+            <svg class="footer-soc-icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -203,19 +265,17 @@
         </li>
       </ul></div>
       <div class="footer-form">
-        <h3 class="footer-soc-title">Subscribe</h3>
-        <form>
-           <div class="footer-wrap">
-            <input name="email" placeholder="E-mail" class="footer-input" type="email">
+        <p class="footer-soc-title footer-input-title">Subscribe</p>
+        <form class="footer-wrap">
+           
+            <input  name="email" placeholder="E-mail" class="footer-input" type="email">
           
           <button type="submit" class="footer-button ">Subscribe
             <svg width="24" height="24" class="footer-icon">
               <use href="./images/symbol-defs.svg#icon-Frame-3-1"></use>
             </svg>
-          </button></div>
+          </button>
         </form>
-
-     
 
       </div>
      </div>
